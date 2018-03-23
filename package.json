@@ -1,0 +1,31 @@
+{
+  "dependencies": {
+    "@angular/core": "^5.2.9",
+    "@angular/common": "^5.2.9",
+    "@angular/compiler": "^5.2.9",
+    "@angular/platform-browser": "^5.2.9",
+    "@angular/platform-browser-dynamic": "^5.2.9",
+    "@angular/upgrade": "^5.2.9",
+    "classlist.js": "^1.1.20150312",
+    "core-js": "^2.5.3",
+    "bootstrap": "^4.0.0",
+    "reflect-metadata": "^0.1.12",
+    "rxjs": "^5.5.7",
+    "systemjs": "^0.21.0",
+    "zone.js": "^0.8.20"
+  },
+  "devDependencies": {
+    "lite-server": "^2.3.0",
+    "typescript": "^2.7.2",
+    "typings": "^2.1.1",
+    "concurrently": "^3.5.1"
+  },
+  "scripts": {
+    "start": "concurrently \"npm run tscwatch\" \"npm run lite-server\" ",
+    "tsc": "tsc",
+    "tscwatch": "tsc -w",
+    "lite-server": "lite-server",
+    "typings": "typings",
+    "postinstall": "typings install"
+  }
+}
